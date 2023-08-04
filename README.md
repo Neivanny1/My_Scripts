@@ -1,5 +1,5 @@
 # My_Scripts
-______________________________commits.py___________________________________
+commits.py
 HOW TO USE
 Download the file
 Use your favorite code editor
