@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true; do
+    # Prompt the user for input
+    echo "Enter a URL (e.g., 'http://xyz.com'):"
+    read url
+
+    # Check if the URL doesn't start with "http://"
+    if [[ ! $url == http* ]]; then
+        echo "Not a valid URL. Please enter a valid URL starting with 'http://'."
+    else
+        wget --mirror --convert-links --wait=2 $url
+        break  # Break out of the loop if a valid URL is provided
+    fi
+done
