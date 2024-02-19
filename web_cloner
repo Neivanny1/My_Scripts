@@ -13,3 +13,7 @@ while true; do
         break  # Break out of the loop if a valid URL is provided
     fi
 done
+# Tested only in linux
+# To use download file
+# Run chmod +x web_cloner
+#Run ./webcloner
